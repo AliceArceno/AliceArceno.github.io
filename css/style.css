@@ -1,39 +1,237 @@
 *{
   margin: 0;
   padding: 0;
-
 }
+
+body{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 header {
-    background-color: rgba(231, 102, 55, 0.904);
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  position: absolute;
+  background-color: crimson;
+  width: 100%;
+  height: 200px;
+}
+
+main{
+  position: relative;
+  /*background-color: aqua;*/
+  width: 900px;
+  height: 1000px;
+  float: left;
+}
+
+.card {
+  background-color: crimson;
+  width: 900px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+div#imagem{
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/imagem\ portifolio.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 div#card-pessoal{
-    margin-top: 140px;
-    background-color: crimson;
-    width: 900px;
-    height: 350px;
+  position: relative;
+  margin-top: 20px;
+  height: 350px;
+}
+
+div#card-pessoal span{ 
+  position: absolute;
+  color: #FFF;
+  margin-left: 320px;
+  font-size: 18px;
+}
+
+.card-titulo{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-size: 28px !important;
+  font-weight: bold;
+  color: #FFF;
+}
+
+
+div#card-pessoal span#subtitulo{
+  margin-top: 45px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+div#linha{
+  width: 455px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 320px;
+  border: 1px solid #FFF;
+}
+
+div#card-pessoal footer{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+  width: 600px;
+  height: 60px;
+  align-items: center;
+  background: coral;
+  bottom: 0px;
+}
+
+div#card-pessoal footer a{
+  width: 160px;
+  color: #FFF;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+
+div#card-sobre{
+  height: 260px;
+}
+
+.linha{
+  position: absolute;
+  border: 1px solid #FFF;
+  width: 730px;
+  margin-left: 85px;
+  margin-top: 75px;
+}
+
+.text-card{
+  text-align: justify;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: lighter;
+}
+
+div#card-sobre p{
+  position: absolute;
+  width: 730px;
+  margin-left: 85px;
+  margin-top: 100px;
+  color: #FFF;
+}
+
+div#card-formacao {
+  height: 365px;
+  background-color: crimson;
+  color: #FFF;
+}
+
+div#card-experiencia{
+  height: 365px;
+}
+
+div#card-habilidades{
+  height: 365px;
+}
+
+div#card-experiencia ul, 
+div#card-formacao ul{
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 100px;
+  background-color: crimson;
+  color: #FFF;
+}
+
+div#card-experiencia ul li,
+div#card-formacao ul li{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+div#card-experiencia ul p,
+div#card-formacao ul p{
+  width: 670px;
+  margin-bottom: 30px;
+}
+
+div#card-experiencia ul span,
+div#card-formacao ul span{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background-color: crimson;
+  color: #FFF;
 }
 
 h1#nome{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;  
+  font-size: 50px;  
   font-weight: bold;
   color: #FFF;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: -728px;
+  margin-top: 5%;
 }
-span#profissão{
+h2#profissão{
   color: #FFF; 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px; 
+  font-size: 30px; 
   font-weight: lighter;
+}
+
+div#main{
   position: absolute;
-  margin-top: 90px;
-  margin-left: -830px;
+  width: 730px;
+  height: 300px;
+  margin-left: 85px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 20px;
+}
+.coluna-50{
+  width: 50%;
+  height: 80px;
+}
+div#main span{
+  font-size: 22px;
+  font-weight: bold;
+}
+.status-100{
+  width: 236px;
+  height: 15px;
+  background-color: coral;
+  border-radius: 22px;
+  margin-top: 15px;
+}
+div#meu-status-make{
+  width: 220px;
+  height: 15px;
+  background-color: #FFF;
+  border-radius: 22px;
+}
+div#meu-status-cozinha{
+  width: 180px;
+  height: 15px;
+  background-color: #FFF;
+  border-radius: 22px;
+}
+div#meu-status-dança{
+  width: 160px;
+  height: 15px;
+  background-color: #FFF;
+  border-radius: 22px;
+}
+div#meu-status-canto{
+  width: 120px;
+  height: 15px;
+  background-color: #FFF;
+  border-radius: 22px;
 }
